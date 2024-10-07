@@ -22,22 +22,13 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a
+         <a id="a1"
           class="navbar-brand"
           href="#"
-          style="
-            font-style: italic;
-            font-size: x-large;
-            font-weight: 900;
-            color: rgb(0, 0, 0);
-            /* background-color: rgba(23, 157, 219, 0.644); */
-            border-radius: 10px;
-            box-shadow: 1px 1px 1px 3px rgb(19, 119, 201);
-            padding: 0.5%;
-            text-decoration: underline;
-          "
+         
         >
-          Live Virtual Class
+        <img style="height: 10vh;width: 10vw;" src="assets/Black and Purple Gradient Modern Studio Logo.png" alt="">
+          LVC
         </a>
         <button
           class="navbar-toggler"
@@ -85,9 +76,10 @@
                   <a class="dropdown-item dropdown-toggle" href="#">MEAN</a>
                   <ul class="dropdown-menu">
                     <a class="dropdown-item" href="mongodb.html">MongoDb</a>
-                    <a class="dropdown-item" href="expressjs.html">Express-JS</a>
-                    <a class="dropdown-item" href="angular.html">Angular-JS</a>
-                    <a class="dropdown-item" href="nodejs.html">Node-JS</a>
+                      <a class="dropdown-item" href="expressjs.html">Express-JS</a>
+                      <a class="dropdown-item" href="angular.html">Angular-JS</a>
+                      <a class="dropdown-item" href="nodejs.html">Node-JS</a>
+                    </li>
                   </ul>
                 </li>
                 <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
@@ -116,19 +108,21 @@
       </div>
     </nav>
   </header>
-
       <section>
+        <h1 style="margin-top: 5%;display: flex;justify-content: center;font-family: 'Times New Roman', Times, serif;color: rgb(22, 67, 68);">Online preparation like never before</h1>
+     
 <div class="row">
 
 <div style=" display:flex;margin-top: 40px;justify-content: center;align-items: center;" class="col-sm-6">
-   
+  
         
         <div id="div1">
+        
           <form action="submitted.html">
+          
            <h5><p style="display: flex;justify-content: center;">Contact Details </p></h5>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-            <label for="password">Password:</label>
+
             <input
               type="password"
               id="password"
@@ -137,41 +131,13 @@
             />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-            <label for="course">Select Course:</label>
-            <select id="course" name="course">
-              <option value="">Select a course</option>
-              <option value="B.Tech">B.Tech</option>
-              <option value="M.Tech">M.Tech</option>
-              <option value="BBA">BBA</option>
-              <option value="MBA">MBA</option></select
+           
             
-            <label for="gender">Select Gender:</label>
-            <select id="gender" name="gender">
-              <option value="">Select a gender</option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-              <option value="Other">Other</option></select
-            >
-            <label for="software">Software Knowledge:</label>
-            <div >
-            <input type="checkbox" id="html" name="software[]" value="HTML" />
-            <label for="html">HTML</label>
-            <input type="checkbox" id="css" name="software[]" value="CSS" />
-            <label for="css">CSS</label>
-            <input
-              type="checkbox"
-              id="javascript"
-              name="software[]"
-              value="JavaScript"
-            />
-            <label for="javascript">JavaScript</label>
-            <input type="checkbox" id="mern" name="software[]" value="MERN" />
-            <label for="mern">MERN</label>
-            <input type="checkbox" id="mean" name="software[]" value="MEAN" />
-            <label for="mean">MEAN</label>
-          </div>
+           
+            
+            
     
-            <label for="remarks">Remarks:</label>
+            <label for="remarks">Querys:</label>
             <textarea id="remarks" name="remarks" rows="5" cols="30"></textarea>
             <p style="text-align: center">
               <input type="submit" value="Submit" />

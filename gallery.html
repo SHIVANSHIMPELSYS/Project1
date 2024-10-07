@@ -20,103 +20,95 @@
         <link rel="stylesheet" href="../css/gallery.css" />
       </head>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="#"
-          style="
-            font-style: italic;
-            font-size: x-large;
-            font-weight: 900;
-            color: rgb(0, 0, 0);
-            /* background-color: rgba(23, 157, 219, 0.644); */
-            border-radius: 10px;
-            box-shadow: 1px 1px 1px 3px rgb(19, 119, 201);
-            padding: 0.5%;
-            text-decoration: underline;
-          "
-        >
-          Live Virtual Class
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="index.html"
-                ><i class="fa-solid fa-house"></i> Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="coursesDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-book icon"></i> All Courses
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">MERN</a>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+             <a id="a1"
+              class="navbar-brand"
+              href="#"
+             
+            >
+            <img style="height: 10vh;width: 10vw;" src="assets/Black and Purple Gradient Modern Studio Logo.png" alt="">
+              LVC
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link mx-0" aria-current="page" href="index.html"
+                    ><i class="fa-solid fa-house"></i> Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="coursesDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-book icon"></i> All Courses
+                  </a>
                   <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                     <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="mongodb.html">MongoDb</a>
-                      <a class="dropdown-item" href="expressjs.html">Express-JS</a>
-                      <a class="dropdown-item" href="react.html">React-JS</a>
-                      <a class="dropdown-item" href="nodejs.html">Node-JS</a>
+                      <a class="dropdown-item dropdown-toggle" href="#">MERN</a>
+                      <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <li class="dropdown-submenu">
+                          <a class="dropdown-item" href="mongodb.html">MongoDb</a>
+                          <a class="dropdown-item" href="expressjs.html">Express-JS</a>
+                          <a class="dropdown-item" href="react.html">React-JS</a>
+                          <a class="dropdown-item" href="nodejs.html">Node-JS</a>
+                        </li>
+                      </ul>
                     </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#">MEAN</a>
+                      <ul class="dropdown-menu">
+                        <a class="dropdown-item" href="mongodb.html">MongoDb</a>
+                          <a class="dropdown-item" href="expressjs.html">Express-JS</a>
+                          <a class="dropdown-item" href="angular.html">Angular-JS</a>
+                          <a class="dropdown-item" href="nodejs.html">Node-JS</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
+                    <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
                   </ul>
                 </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">MEAN</a>
-                  <ul class="dropdown-menu">
-                    <a class="dropdown-item" href="mongodb.html">MongoDb</a>
-                    <a class="dropdown-item" href="expressjs.html">Express-JS</a>
-                    <a class="dropdown-item" href="angular.html">Angular-JS</a>
-                    <a class="dropdown-item" href="nodejs.html">Node-JS</a>
-                  </ul>
+  
+                <li class="nav-item">
+                  <a class="nav-link mx-0" href="registration.html"
+                    ><i class="fas fa-user-plus"></i> Registration Page</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
-                <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
+  
+                <li class="nav-item">
+                  <a class="nav-link mx-0" href="gallery.html"
+                    ><i class="fas fa-user-plus"></i>Gallery</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-0" href="contactus.html"
+                    ><i class="fas fa-phone"></i> Contact Us</a
+                  >
+                </li>
               </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " href="registration.html"
-                ><i class="fas fa-user-plus"></i> Registration Page</a
-              >
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html"
-                ><i class="fas fa-user-plus"></i>Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html"
-                ><i class="fas fa-phone"></i> Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+            </div>
+          </div>
+        </nav>
+      </header>
   
   <body>
     <div style="padding: 1%" class="row">
