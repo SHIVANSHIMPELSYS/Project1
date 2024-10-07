@@ -23,7 +23,26 @@
             .card{
                 margin-top: 5%;
                 /* border: 2px solid rgba(0, 132, 255, 0.623); */
-                box-shadow: 1px 5px 2px 5px  rgba(0, 132, 255, 0.623); ;
+                box-shadow: 1px 5px 2px 5px  rgba(0, 132, 255, 0.623); 
+                .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  } 
             }
         </style>
       </head>
