@@ -1,0 +1,72 @@
+/* Add some basic styling to make the page look decent */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    /* background-color: rgba(81, 164, 175, 0.096); */
+  }
+  
+  #div5 {
+    text-align: center;
+  }
+  
+  #div1 {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px  ;
+    border: 1px solid #050202;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(47, 96, 143, 0.486);
+  }
+  
+  form {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10;}
+    footer{
+      background-color: rgba(43, 123, 214, 0.404);
+      color: white;
+  }
+  input:focus {
+    box-shadow: 1px 1px 5px 5px rgba(70, 141, 182, 0.596);
+  }
+  textarea:focus{
+    box-shadow: 1px 1px 10px 11px rgba(4, 130, 168, 0.253);
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  } 
+
+  
+    

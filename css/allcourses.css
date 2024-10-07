@@ -1,0 +1,70 @@
+body{
+    background-color: rgba(81, 164, 175, 0.096);
+}
+.row section{
+    /* box-shadow: 10px 0 10px rgb(25, 71, 54);     */
+    margin-top: 5%;
+    margin-left: 2%;
+}
+.row section col-md-8:hover{
+    background-color: aqua;
+}footer{
+    background-color: rgba(43, 123, 214, 0.404);
+    color: white;
+}
+#section1:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-color: aquamarine    ;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgb(98, 132, 194);
+}
+#section2:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-color: aquamarine    ;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgb(98, 132, 194);
+}
+#section3:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-color: aquamarine    ;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgb(98, 132, 194);
+}
+#section4:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-color: aquamarine    ;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgb(98, 132, 194);
+}
+#section5:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-color: aquamarine    ;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgb(98, 132, 194);
+}
+#section6:hover{
+    transition-duration: 1s;
+    transform: scale(1.05);
+    background-color: aquamarine    ;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgb(98, 132, 194);
+}
+#section6 {
+    transition-duration: 1s; /* add this line */
+  }
+  #section5  {
+    transition-duration: 1s; /* add this line */
+  }#section4 {
+    transition-duration: 1s; /* add this line */
+  }#section3 {
+    transition-duration: 1s; /* add this line */
+  }#section2 {
+    transition-duration: 1s; /* add this line */
+  }#section1 {
+    transition-duration: 1s; /* add this line */
+  }
