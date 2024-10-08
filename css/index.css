@@ -254,6 +254,9 @@ footer{
   padding: 5%;
 }
 }
+.nav-link mx-0:hover{
+text-decoration: underline;
+}
 
 
 
