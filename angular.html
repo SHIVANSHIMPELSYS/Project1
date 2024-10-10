@@ -71,6 +71,22 @@
 }
             
         </style>
+        <script>
+          function fun1(value) {
+              // value.preventDefault();
+              console.log("1234567890o")
+      // Create an object to map the selected value to the corresponding HTML page
+      var pages = {
+          "1": "Teacher1",
+          "2": "Teacher2",
+          "3": "Teacher3",
+          "4": "Teacher4"
+      };
+  
+      // Redirect the user to the corresponding HTML page
+      alert("You want to study Angular with "+pages[value])
+  }
+        </script>
       </head>
       <body>
         <header>
@@ -116,7 +132,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                       <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">MERN</a>
+                        <a class="dropdown-item dropdown-toggle" href="mern.html">MERN</a>
                         <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                           <li class="dropdown-submenu">
                             <a class="dropdown-item" href="mongodb.html"><i class="fa-solid fa-database"></i>MongoDb</a>
@@ -127,7 +143,7 @@
                         </ul>
                       </li>
                       <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="#">MEAN</a>
+                        <a class="dropdown-item dropdown-toggle" href="mean.html">MEAN</a>
                         <ul class="dropdown-menu">
                           <a class="dropdown-item" href="mongodb.html"><i class="fa-solid fa-database"></i>MongoDb</a>
                             <a class="dropdown-item" href="expressjs.html"><i class="fa-brands fa-js"></i>Express-JS</a>
@@ -173,7 +189,21 @@
       <div  class="card-body">
         <h5 style="display: flex;justify-content: center;" class="card-title">Angular Js</h5>
         <p style="display: flex;justify-content: center;" class="card-text">AngularJS is a JavaScript framework used for building single-page applications (SPAs). It's a popular choice for creating dynamic, interactive web pages.</p>
-        <a style="display: flex;justify-content: center;" href="#" class="btn btn-primary">Start Course</a>
+        <div style="display: flex;justify-content: center;">
+          <form style=" width: 100vh; box-shadow: 1px 1px 5px 5px rgb(94, 150, 214); margin-top: 10%; margin-bottom: 2%;" name="search_form" onsubmit="fun1(this.site.value); return false">
+           <h3>Available Faculty</h3>
+          
+            <input  style="margin-left: 5%;" type="radio" name="site" value="1" checked> TEACHER1
+            <br>
+            <input  style="margin-left: 5%;" type="radio" name="site" value="2"> TEACHER2
+            <br>
+            <input  style="margin-left: 5%;" type="radio" name="site" value="3"> TEACHER3
+            <br>
+            <input  style="margin-left: 5%;" type="radio" name="site" value="4"> TEACHER4
+            <br>
+            <input  style="margin-left: 5%; margin-bottom: 2%;" style="display: flex;justify-content: center;" type="submit" value="Start">
+        </form>
+      </div> 
       </div>
       </div>
     </div>
