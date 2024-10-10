@@ -1,6 +1,7 @@
 /* Add some basic styling to make the page look decent */
 body {
   font-family: "Trirong", serif;
+  
     /* margin: 20px; */
     /* background-color: rgba(81, 164, 175, 0.096); */
   }
@@ -16,6 +17,8 @@ body {
     border: 1px solid #050202;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 5px rgba(47, 96, 143, 0.486);
+    margin-lefT:5%;
+    margin-right: 5%;
   }
   
   form {
@@ -40,6 +43,7 @@ body {
     margin-right: 10;}
     footer{
       background-color: rgba(43, 123, 214, 0.404);
+      
       color: white;
   }
   input:focus {
