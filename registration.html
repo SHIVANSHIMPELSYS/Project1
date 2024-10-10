@@ -45,13 +45,15 @@
   }
 
   // If all validations pass, submit the form
+  console.log("Fun1 executed ")
   return true;
 }
 function fun2(){
-  if(document.getElementById('fname').value===""){
+  if(document.getElementById('name').value===""){
     // alert("name required");
-    document.getElementById("fname").focus();
+    document.getElementById("name").focus();
   }
+  console.log("fun2 executed")
  }
     
     </script>
@@ -142,7 +144,7 @@ function fun2(){
 
               <li class="nav-item">
                 <a class="nav-link mx-0" href="gallery.html"
-                  ><i class="fas fa-user-plus"></i>Gallery</a
+                  ><i class="fa solid fa-book icon"></i> Gallery</a
                 >
               </li>
               <li class="nav-item">
@@ -164,10 +166,10 @@ function fun2(){
        
         
           <div id="div1">
-            <form>
-              <h5><p style="display: flex;justify-content: center;">Registration Details </p></h5>
+            <form  onsubmit="fun1(event)" action="sub.html" >
+              <h3><p style="font-family:'Times New Roman', Times, serif; font-weight: 800; font-size: x-large; text-shadow: 1px 1px 1px rgb(10, 135, 252); display: flex;justify-content: center;">Registration Details </p></h3>
               <label for="name">Name:</label>
-              <input type="text" id="fname" name="name" autofocus required onblur="fun2()" />
+              <input type="text" id="name" name="name" autofocus required onblur="fun2()" />
               <label for="password">Password:</label>
               <input type="password" id="password" name="password" required />
               <label for="email">Email:</label>
@@ -175,10 +177,10 @@ function fun2(){
               <label for="course">Select Course:</label>
               <select id="course" name="course">
                 <option value="">Select a course</option>
-                <option value="B.Tech">B.Tech</option>
-                <option value="M.Tech">M.Tech</option>
-                <option value="BBA">BBA</option>
-                <option value="MBA">MBA</option>
+                <option value="B.Tech">MERN</option>
+                <option value="M.Tech">MEAN</option>
+                <option value="BBA">GEN AI</option>
+                <option value="MBA">DEVOPS</option>
               </select>
               <label for="gender">Select Gender:</label>
               <select id="gender" name="gender">
@@ -203,7 +205,7 @@ function fun2(){
               <label for="remarks">Remarks:</label>
               <textarea id="remarks" name="remarks" rows="5" cols="30"></textarea>
               <p style="text-align: center">
-                <input type="submit" value="Submit" onclick="fun1(event)" />
+                <input type="submit" value="Submit"/>
               </p>
             </form>
           
@@ -228,127 +230,125 @@ function fun2(){
       </div>
     </div>
    
-  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-    <!-- Section: Social media -->
-    <section
-      class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-    >
-      <!-- Left -->
-      <div class="me-5 d-none d-lg-block">
-        <span>Get connected with us on social networks:</span>
-      </div>
-      <!-- Left -->
-
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>Company name
-            </h6>
-            <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-            <p>
-              <a href="#!" class="text-reset">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Settings</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-          </div>
-          <!-- Grid column -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
         </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
+        <!-- Left -->
 
-    <!-- Copyright -->
-    <div
-      class="text-center p-4"
-      style="background-color: rgba(0, 0, 0, 0.05)"
-    >
-      © 2021 Copyright:
-      <a class="text-reset fw-bold" href="">LVC.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Live Virtual Class
+              </h6>
+              <p>
+              This is a Live Virtual Class and Shivansh has all rights reserved for it 2024.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="angular.html" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="react.html" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="devops.html" class="text-reset">DevOps</a>
+              </p>
+              <p>
+                <a href="genai.html" class="text-reset">GenAI</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="registration.html"class=" text-reset">Regsiter</a>
+              </p>
+              <p>
+                <a href="contactus.html" class="text-reset">Contact Us</a>
+              </p>
+              <p>
+                <a href="mongodb.html" class="text-reset">Courses</a>
+              </p>
+              <p>
+                <a href="index.html" class="text-reset">Home</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> Impelsys Pvt Ltd Bangalore</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+               shivansh.s@impelsys.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 9876543210</p>
+            
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="">LVC.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
   </body>
 </html>
