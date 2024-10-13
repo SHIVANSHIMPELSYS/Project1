@@ -197,7 +197,7 @@ footer {
 }
 #h34 {
   color: rgb(0, 102, 255);
-  margin-top: 5%;
+  margin-top: 2%;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -362,18 +362,18 @@ header {
   #h34 {
     font-weight: 800;
     font-family: "Times New Roman", Times, serif;
-    text-decoration: solid;
+    /* text-decoration: underline; */
     display: flex;
     justify-content: center;
-    padding-left: 10%;
+    
   }
 
   #h3 {
     display: flex;
     justify-content: center;
-    padding: 4%;
-    border: 1px solid black;
-    box-shadow: 1px 2px 15px 1px rgba(65, 163, 255, 0.712);
+    /* padding: 4%; */
+    /* border: 1px solid black; */
+    /* box-shadow: 1px 2px 15px 1px rgba(65, 163, 255, 0.712); */
   }
   #div2 {
     justify-content: center;
@@ -397,7 +397,7 @@ header {
     background-color: white;
   }
   #section3 {
-    padding: 8%;
+    padding: 2%;
     margin-bottom: 10%;
     margin-left: 6%;
     box-shadow: 0 0 0 0;
