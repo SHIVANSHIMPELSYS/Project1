@@ -2,7 +2,6 @@ body{
     background-color: rgba(81, 164, 175, 0.096);
 }
 .row section{
-    /* box-shadow: 10px 0 10px rgb(25, 71, 54);     */
     margin-top: 5%;
     margin-left: 2%;
 }
@@ -55,16 +54,15 @@ body{
     box-shadow: 10px 0 10px rgb(98, 132, 194);
 }
 #section6 {
-    transition-duration: 1s; /* add this line */
+    transition-duration: 1s; 
   }
   #section5  {
-    transition-duration: 1s; /* add this line */
+    transition-duration: 1s; 
   }#section4 {
-    transition-duration: 1s; /* add this line */
+    transition-duration: 1s;
   }#section3 {
-    transition-duration: 1s; /* add this line */
+    transition-duration: 1s;
   }#section2 {
-    transition-duration: 1s; /* add this line */
-  }#section1 {
-    transition-duration: 1s; /* add this line */
+    transition-duration: 1s;
+    transition-duration: 1s; 
   }
