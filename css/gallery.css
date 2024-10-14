@@ -5,68 +5,67 @@
   transition-duration: 1s;
 }
 .dropdown-submenu {
-    position: relative;
-  }
-  
-  .dropdown-submenu:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    margin-top: 0;
-  }
-  
-  .dropdown-menu.show {
-    display: block;
-  }
-  #a11:hover{
-    color: rgba(122, 85, 223, 0.733);
-    text-decoration: underline;
-  }
-  body{
-    font-family: "Trirong", serif;
-  }
-  #a1{
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style:normal;
-    color: rgb(30, 22, 68);
-    border-radius: 10px;
-    /* text-decoration: underline; */
-  }
-  
-  
-  footer{
-    background-color: rgba(235, 236, 236, 0.404);
-  }
-  .container {
-    margin-top: 20px;
-  }
-  .card {
-    margin-bottom: 20px;
-    border: 2px solid black;
-  }
-  .effect-selector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-  }
-  .effect-selector button {
-    margin-right: 10px;}
+  position: relative;
+}
 
-  .cinzel-style {
-      font-family: "Cinzel", serif;
-      font-optical-sizing: auto;
-      font-weight: 500;
-      font-style: normal;
-      display: flex;
-      justify-content: center;
-      padding-left: 5%;
-    }
-  
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+#a11:hover {
+  color: rgba(122, 85, 223, 0.733);
+  text-decoration: underline;
+}
+body {
+  font-family: "Trirong", serif;
+}
+#a1 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(30, 22, 68);
+  border-radius: 10px;
+  /* text-decoration: underline; */
+}
+
+footer {
+  background-color: rgba(235, 236, 236, 0.404);
+}
+.container {
+  margin-top: 20px;
+}
+.card {
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+.effect-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.effect-selector button {
+  margin-right: 10px;
+}
+
+.cinzel-style {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+}
