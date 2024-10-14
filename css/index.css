@@ -223,8 +223,13 @@ footer {
 #span2 {
   color: rgb(248, 41, 41);
 }
+#span2 {
+  color: rgb(91, 92, 94);
+  font-family: initial;
+  font-size: x-large;
+}
 #span1 {
-  color: rgb(0, 102, 255);
+  color: rgb(55, 115, 235);
   font-family: initial;
   font-size: x-large;
 }
@@ -257,6 +262,9 @@ footer {
 #h2 {
   display: flex;
   justify-content: center;
+  font-size: xx-large;
+  margin-bottom: 5%;
+  color: rgb(55, 115, 235);
 }
 #h33 {
   display: flex;
@@ -279,7 +287,7 @@ footer {
 #h5 {
   color: rgb(66, 111, 170);
   display: flex;
-  margin-left: 2%;
+  /* margin-left: 10%; */
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 1%;
@@ -299,13 +307,13 @@ footer {
   height: 50%;
   padding-left: 10%;
   border-radius: 15px;
-  box-shadow: 1px 2px 15px 1px rgba(139, 86, 223, 0.37);
+  box-shadow: 1px 2px 15px 1px rgba(18, 18, 19, 0.37);
   margin-right: 2%;
   margin-top: 0%;
   width: 100%;
 }
 #row1div:hover {
-  box-shadow: 1px 2px 15px 1px rgba(139, 86, 223, 0.808);
+  box-shadow: 1px 2px 15px 1px rgba(22, 22, 22, 0.808);
 }
 #row1 {
   display: flex;
@@ -339,6 +347,10 @@ header {
 #header1{
   box-shadow: 2px 0px 0px rgba(53, 87, 67, 0.705);
 }
+#a11:hover{
+  color: rgba(122, 85, 223, 0.733);
+  text-decoration: underline;
+}
 #a11{ 
   font-family: 'Times New Roman', Times, serif;
   font-size: large;}
@@ -371,9 +383,6 @@ header {
   #h3 {
     display: flex;
     justify-content: center;
-    /* padding: 4%; */
-    /* border: 1px solid black; */
-    /* box-shadow: 1px 2px 15px 1px rgba(65, 163, 255, 0.712); */
   }
   #div2 {
     justify-content: center;
@@ -386,10 +395,7 @@ header {
     height: 50vh;
    
   }
-  #h2 {
-    font-size: xx-large;
-    margin-bottom: 5%;
-  }
+
   #section2 {
     padding: 5%;
     margin-bottom: 10%;
@@ -444,7 +450,7 @@ header {
    #section5 .row {
     flex-direction: column;
     overflow-y: auto;
-    max-height: 300px; /* adjust the max height as needed */
+    max-height: 300px;
     padding: 1px;
     background-color: rgba(62, 21, 209, 0.178);
   }
@@ -453,12 +459,12 @@ header {
     margin: 10px 0;
   }
   #section5 .card {
-    margin-bottom: 10px; /* add some margin between cards */
+    margin-bottom: 10px; 
   }
   #section2 .row {
     flex-direction: column;
     overflow-y: auto;
-    max-height: 300px; /* adjust the max height as needed */
+    max-height: 300px;
     padding: 1px;
     background-color: rgba(62, 21, 209, 0.178);
   }
@@ -467,7 +473,7 @@ header {
     margin: 10px 0;
   }
   #section2 .card {
-    margin-bottom: 10px; /* add some margin between cards */
+    margin-bottom: 10px; 
   }#qwe {
     margin-top: 0%;
     padding-left: 1%;

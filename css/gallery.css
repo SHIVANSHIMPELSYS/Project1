@@ -23,6 +23,10 @@
   .dropdown-menu.show {
     display: block;
   }
+  #a11:hover{
+    color: rgba(122, 85, 223, 0.733);
+    text-decoration: underline;
+  }
   #a1{
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
