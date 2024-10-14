@@ -62,11 +62,10 @@ body {
 }
 #section3 {
   margin-top: 5%;
-  margin-left: 2%;
-  width: 95%;
+  width: 100%;
   box-shadow: 1px 1px 10px 1px rgba(53, 87, 67, 0.705);
 
-  margin-left: 2%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +191,7 @@ footer {
 }
 #section2 {
   background-color: rgba(48, 15, 236, 0.068);
-  padding: 2%;
+  /* padding: 2%; */
 }
 #h34 {
   color: rgb(0, 102, 255);
@@ -422,19 +421,19 @@ header {
   }
 
   #section2 {
-    padding: 5%;
+    padding: 2%;
     margin-bottom: 10%;
     box-shadow: 0 0 0 0;
     background-color: white;
   }
   #section3 {
-    padding: 2%;
+    /* padding: 2%; */
     margin-bottom: 10%;
-    margin-left: 6%;
+   
     box-shadow: 0 0 0 0;
     border: 1px solid rgba(39, 131, 185, 0.705);
     background-color: white;
-    width: 90%;
+    width: 100%;
   }
   #section4 {
     padding: 5%;
@@ -442,7 +441,7 @@ header {
     box-shadow: 0 0 0 0;
     border: 5px solid rgba(53, 87, 67, 0.705);
     margin-left: 6%;
-    width: 90%;
+    width: 95%;
     background-color: white;
   }
   #qwe {

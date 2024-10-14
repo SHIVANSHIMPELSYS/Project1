@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
     <linkin
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,69 +24,74 @@
     <script>
       function fun1(event) {
         event.preventDefault();
- 
-  var name = document.getElementById("name").value;
-  var ncontains = /^[a-zA-Z ]+$/;
-  if (!ncontains.test(name)) {
-    alert("Name should only contain alphabets");
-    return false;
-  }
 
+        var name = document.getElementById("name").value;
+        var ncontains = /^[a-zA-Z ]+$/;
+        if (!ncontains.test(name)) {
+          alert("Name should only contain alphabets");
+          return false;
+        }
 
-  var pass = document.getElementById("password").value;
-  var pcontains = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{9,}$/;
-  if (!pcontains.test(pass)) {
-    alert("Password should be more than 9 characters, contain at least one uppercase letter, one lowercase letter, one special character, and one digit");
-    return false;
-  }
+        var pass = document.getElementById("password").value;
+        var pcontains =
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{9,}$/;
+        if (!pcontains.test(pass)) {
+          alert(
+            "Password should be more than 9 characters, contain at least one uppercase letter, one lowercase letter, one special character, and one digit"
+          );
+          return false;
+        }
 
-  var email = document.getElementById("email").value;
-  var econtains = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  if (!econtains.test(email)) {
-    alert("Invalid email address");
-    return false;
-  }
+        var email = document.getElementById("email").value;
+        var econtains = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!econtains.test(email)) {
+          alert("Invalid email address");
+          return false;
+        }
 
-  // If all validations pass, submit the form
-  console.log("Fun1 executed ")
-  window.location.href="sub.html";
-  return true;
-}
-function fun2(){
-  if(document.getElementById('name').value===""){
-    // alert("name required");
-    document.getElementById("name").focus();
-  }
-  console.log("fun2 executed")
- }
-    
+        // If all validations pass, submit the form
+        console.log("Fun1 executed ");
+        window.location.href = "sub.html";
+        return true;
+      }
+      function fun2() {
+        if (document.getElementById("name").value === "") {
+          // alert("name required");
+          document.getElementById("name").focus();
+        }
+        console.log("fun2 executed");
+      }
     </script>
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="image/x-icon">
-    
+    <link
+      rel="shortcut icon"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/registration.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <header">
+ 
+
+   
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-           <a id="a1"
-            class="navbar-brand"
-            href="index.html"
-           
-          >
-         
-            LVC
-          </a>
+          <a id="a1" class="navbar-brand" href="index.html"> LVC </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -97,15 +105,27 @@ function fun2(){
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul  class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a id="a11" style="font-family: 'Times New Roman', Times, serif;font-size: large;" class="nav-link mx-5" aria-current="page" href="index.html"
+                <a
+                  id="a11"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  aria-current="page"
+                  href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item mx-5 dropdown">
-                <a id="a11"
-                style="font-family: 'Times New Roman', Times, serif;font-size: large;"
+                <a
+                  id="a11"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
                   class="nav-link dropdown-toggle"
                   href="#"
                   id="coursesDropdown"
@@ -113,50 +133,92 @@ function fun2(){
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                 Categories
-
+                  Categories
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                   <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="mern.html">MERN</a>
+                    <a class="dropdown-item dropdown-toggle" href="mern.html"
+                      >MERN</a
+                    >
                     <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                       <li class="dropdown-submenu">
-                        <a class="dropdown-item" href="mongodb.html"><i class="fa-solid fa-database"></i>MongoDb</a>
-                        <a class="dropdown-item" href="expressjs.html"><i class="fa-brands fa-js"></i>Express-JS</a>
-                        <a class="dropdown-item" href="react.html"><i class="fa-brands fa-react"></i>React-JS</a>
-                        <a class="dropdown-item" href="nodejs.html"><i class="fa-brands fa-node"></i>Node-JS</a>
+                        <a class="dropdown-item" href="mongodb.html"
+                          ><i class="fa-solid fa-database"></i>MongoDb</a
+                        >
+                        <a class="dropdown-item" href="expressjs.html"
+                          ><i class="fa-brands fa-js"></i>Express-JS</a
+                        >
+                        <a class="dropdown-item" href="react.html"
+                          ><i class="fa-brands fa-react"></i>React-JS</a
+                        >
+                        <a class="dropdown-item" href="nodejs.html"
+                          ><i class="fa-brands fa-node"></i>Node-JS</a
+                        >
                       </li>
                     </ul>
                   </li>
                   <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="mean.html">MEAN</a>
+                    <a class="dropdown-item dropdown-toggle" href="mean.html"
+                      >MEAN</a
+                    >
                     <ul class="dropdown-menu">
-                      <a class="dropdown-item" href="mongodb.html"><i class="fa-solid fa-database"></i>MongoDb</a>
-                        <a class="dropdown-item" href="expressjs.html"><i class="fa-brands fa-js"></i>Express-JS</a>
-                        <a class="dropdown-item" href="angular.html"><i class="fa-brands fa-angular"></i>Angular-JS</a>
-                        <a class="dropdown-item" href="nodejs.html"><i class="fa-brands fa-node"></i>Node JS</a>
-                      </li>
+                      <a class="dropdown-item" href="mongodb.html"
+                        ><i class="fa-solid fa-database"></i>MongoDb</a
+                      >
+                      <a class="dropdown-item" href="expressjs.html"
+                        ><i class="fa-brands fa-js"></i>Express-JS</a
+                      >
+                      <a class="dropdown-item" href="angular.html"
+                        ><i class="fa-brands fa-angular"></i>Angular-JS</a
+                      >
+                      <a class="dropdown-item" href="nodejs.html"
+                        ><i class="fa-brands fa-node"></i>Node JS</a
+                      >
                     </ul>
                   </li>
                   <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
-                  <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
+                  <li>
+                    <a class="dropdown-item" href="devops.html">DevOps</a>
+                  </li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a id="a11" style="font-family: 'Times New Roman', Times, serif;font-size: large;" class="nav-link mx-5" href="registration.html"
+                <a
+                  id="a11"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  href="registration.html"
                   >Register</a
                 >
               </li>
 
               <li class="nav-item">
-                <a id="a11" style="font-family: 'Times New Roman', Times, serif;font-size: large;"class="nav-link mx-5" href="gallery.html"
+                <a
+                  id="a11"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  href="gallery.html"
                   >Gallery</a
                 >
               </li>
               <li class="nav-item">
-                <a id="a11" style="font-family: 'Times New Roman', Times, serif; font-size: large;" class="nav-link mx-5" href="contactus.html"
-                  > Contact Us</a
+                <a
+                  id="a11"
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  href="contactus.html"
+                >
+                  Contact Us</a
                 >
               </li>
             </ul>
@@ -164,19 +226,37 @@ function fun2(){
         </div>
       </nav>
     </header>
-   
-   
-    <div  class="row">
-      <h1 class="cinzel-style" style=" background-color: rgba(2, 23, 209, 0.199);">Explore Inspiring Online Courses</h1>
-      <div style="background-color: white;" class="col-sm-6">
+    <h1
+    class="cinzel-style"
+    style="background-color: rgba(2, 23, 209, 0.199)"
+  >
+    Explore Inspiring Online Courses
+  </h1>
+  
+    <div class="container">
+
+    <div class="row">
+     
+      
+      
+      <div style="background-color: white" class="col-sm-6">
         <section>
-       
-        
           <div id="div1">
-            <form  onsubmit="fun1(event)" action="sub.html" >
-              <h3 class="gowun-dodum-regular" ><p style=" display: flex;justify-content: center;">Registration Details </p></h3>
+            <form onsubmit="fun1(event)" action="sub.html">
+              <h3 class="gowun-dodum-regular">
+                <p style="display: flex; justify-content: center">
+                  Registration Details
+                </p>
+              </h3>
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" autofocus required onblur="fun2()" />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autofocus
+                required
+                onblur="fun2()"
+              />
               <label for="password">Password:</label>
               <input type="password" id="password" name="password" required />
               <label for="email">Email:</label>
@@ -198,44 +278,79 @@ function fun2(){
               </select>
               <label for="software">Software Knowledge:</label>
               <div>
-                <input type="checkbox" id="html" name="software[]" value="HTML" />
+                <input
+                  type="checkbox"
+                  id="html"
+                  name="software[]"
+                  value="HTML"
+                />
                 <label for="html">HTML</label>
                 <input type="checkbox" id="css" name="software[]" value="CSS" />
                 <label for="css">CSS</label>
-                <input type="checkbox" id="javascript" name="software[]" value="JavaScript" />
+                <input
+                  type="checkbox"
+                  id="javascript"
+                  name="software[]"
+                  value="JavaScript"
+                />
                 <label for="javascript">JavaScript</label>
-                <input type="checkbox" id="mern" name="software[]" value="MERN" />
+                <input
+                  type="checkbox"
+                  id="mern"
+                  name="software[]"
+                  value="MERN"
+                />
                 <label for="mern">MERN</label>
-                <input type="checkbox" id="mean" name="software[]" value="MEAN" />
+                <input
+                  type="checkbox"
+                  id="mean"
+                  name="software[]"
+                  value="MEAN"
+                />
                 <label for="mean">MEAN</label>
               </div>
               <label for="remarks">Remarks:</label>
-              <textarea id="remarks" name="remarks" rows="5" cols="30"></textarea>
-                <input type="submit" value="Submit"/>
-          
+              <textarea
+                id="remarks"
+                name="remarks"
+                rows="5"
+                cols="30"
+              ></textarea>
+              <input type="submit" value="Submit" />
             </form>
-          
           </div>
         </section>
-        
-        
       </div>
-      <div style="background-color: rgba(38, 18, 224, 0.24); display: flex; justify-content: center; align-items: center;" class="col-sm-6">
-  
-      <div class="col-sm-6">
-        <h1 style="padding: 5%; margin-top: 5%;display: flex;justify-content: center;font-family: 'Times New Roman', Times, serif;color: rgb(22, 67, 68);"> Crack your goal with India’s top educators</h1>
-       
-        <img style="width: 100%; margin-bottom: 5%;" src="assets/registration page for a higher education website with adults.png" alt="">
-        <br>
-        
-      <img style="width: 100%;" src="assets/a registration page image for a higher education website with adults, width of screen size and height 60vh.png"
-    </div>
+     
+        <div class="col-sm-5">
+          <h1
+            style="
+              padding: 5%;
+              margin-top: 5%;
+              display: flex;
+              justify-content: center;
+              font-family: 'Times New Roman', Times, serif;
+              color: rgb(22, 67, 68);
+            "
+          >
+            Crack your goal with India’s top educators
+          </h1>
 
+          <img
+            style="width: 100%; margin-bottom: 5%"
+            src="assets/registration page for a higher education website with adults.png"
+            alt=""
+          />
+          <br />
 
-
+          <img style="width: 100%;" src="assets/a registration page image for a
+          higher education website with adults, width of screen size and height
+          60vh.png"
+        </div>
       </div>
     </div>
-   
+  </div>
+
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
       <!-- Section: Social media -->
       <section
@@ -284,7 +399,8 @@ function fun2(){
                 <i class="fas fa-gem me-3"></i>Live Virtual Class
               </h6>
               <p>
-              This is a Live Virtual Class and Shivansh has all rights reserved for it 2024.
+                This is a Live Virtual Class and Shivansh has all rights
+                reserved for it 2024.
               </p>
             </div>
             <!-- Grid column -->
@@ -313,7 +429,7 @@ function fun2(){
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-                <a href="registration.html"class=" text-reset">Regsiter</a>
+                <a href="registration.html" class="text-reset">Regsiter</a>
               </p>
               <p>
                 <a href="contactus.html" class="text-reset">Contact Us</a>
@@ -334,10 +450,9 @@ function fun2(){
               <p><i class="fas fa-home me-3"></i> Impelsys Pvt Ltd Bangalore</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
-               shivansh.s@impelsys.com
+                shivansh.s@impelsys.com
               </p>
               <p><i class="fas fa-phone me-3"></i> 9876543210</p>
-            
             </div>
             <!-- Grid column -->
           </div>
@@ -356,5 +471,6 @@ function fun2(){
       </div>
       <!-- Copyright -->
     </footer>
+ 
   </body>
 </html>

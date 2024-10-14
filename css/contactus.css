@@ -80,15 +80,8 @@ textarea:focus {
 .dropdown-menu.show {
   display: block;
 }
-#a1 {
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  font-size: x-large;
-  font-weight: 900;
-  color: rgb(30, 22, 68);
-  border-radius: 10px;
-  text-decoration: underline;
-}
+
+
 #a11 {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;}
@@ -105,6 +98,15 @@ textarea:focus {
     font-family: "Montaga", serif;
     font-weight: 400;
     font-style: normal;
+  }
+  #a1{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style:normal;
+    color: rgb(30, 22, 68);
+    border-radius: 10px;
+    /* text-decoration: underline; */
   }
   
   

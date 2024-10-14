@@ -5,6 +5,15 @@ body {
   #div5 {
     text-align: center;
   }
+  #a1{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style:normal;
+    color: rgb(30, 22, 68);
+    border-radius: 10px;
+    /* text-decoration: underline; */
+  }
   
   #div1 {
     max-width: 600px;
@@ -71,16 +80,7 @@ body {
   .dropdown-menu.show {
     display: block;
   } 
-  #a1{
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
-    font-weight: 900;
-    color:rgb(30, 22, 68);
-    border-radius: 10px;
-    /* padding: 0.5%; */
-    text-decoration: underline;
-  }
+  
   .cinzel-style {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
