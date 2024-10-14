@@ -181,15 +181,14 @@ footer {
 .dropdown-menu.show {
   display: block;
 }
-#a1 {
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  font-size: x-large;
+#a1{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
   font-weight: 900;
+  font-style:normal;
   color: rgb(30, 22, 68);
   border-radius: 10px;
-
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 #section2 {
   background-color: rgba(48, 15, 236, 0.068);
@@ -198,7 +197,11 @@ footer {
 #h34 {
   color: rgb(0, 102, 255);
   margin-top: 2%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  
+  font-style: normal;
 }
 
 .nav-link mx-0:hover {
@@ -262,7 +265,9 @@ footer {
 #h2 {
   display: flex;
   justify-content: center;
-  font-size: xx-large;
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 5%;
   color: rgb(55, 115, 235);
 }
@@ -330,7 +335,7 @@ section {
   margin: 0%;
 }
 header {
-  padding: 1%;
+  /* padding: 1%; */
 }
 .container {
   width: 95%;
@@ -353,6 +358,14 @@ header {
 #a11{ 
   font-family: 'Times New Roman', Times, serif;
   font-size: large;}
+  .montaga-regular {
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+  }
+  
 @media only screen and (max-width: 575px) {
   #h5 {
     color: rgb(66, 111, 170);
@@ -381,8 +394,11 @@ header {
     margin-bottom: 8%;
   }
   #h34 {
-    font-weight: 800;
-    font-family: "Times New Roman", Times, serif;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  
+  font-style: normal;
     /* text-decoration: underline; */
     display: flex;
     justify-content: center;

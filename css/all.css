@@ -1,0 +1,9 @@
+#a111 {
+  background-color: rgba(2, 23, 209, 0.199);
+  display: flex;
+  justify-content: center;
+  color: rgb(66, 66, 104);
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal; 
+}

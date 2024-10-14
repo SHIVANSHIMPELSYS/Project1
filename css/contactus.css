@@ -87,13 +87,27 @@ textarea:focus {
   font-weight: 900;
   color: rgb(30, 22, 68);
   border-radius: 10px;
-  padding: 0.5%;
   text-decoration: underline;
 }
 #a11 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
-}
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;}
+  .cinzel-style {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+  }
+  .gowun-dodum-regular {
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+
 @media only screen and (max-width: 575px) {
   .row {
     padding: 4%;
