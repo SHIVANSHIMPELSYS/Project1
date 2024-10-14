@@ -27,9 +27,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/gallery.css" />
+    
   </head>
 
-  <header style="box-shadow: 10px 3px 10px 5px rgba(14, 13, 13, 0.479)">
+
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a id="a1" class="navbar-brand" href="index.html"> LVC </a>
@@ -167,84 +169,157 @@
   </header>
 
   <body>
+    <h1
+    class="cinzel-style"
+    style="background-color: rgba(2, 23, 209, 0.199)"
+  >
+   Here is my gallery
+  </h1>
     <div class="container">
-
+      <div style="padding: 1%" class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img  src="assets/slider image for an online education website.png" class="card-img-top" alt="..." />
+            <div class="effect-selector">
+              <!-- <h5 class="">Select Effect</h5> -->
+              
+              <select class="effect-options">
+                <option value="normal">Normal</option>
+                <option value="opacity-0.5">Opacity 0.5</option>
+                <option value="rotate-180">Rotation of 180*</option>
+                <option value="box-shadow">Box Shadow Effect</option>
+                <option value="sepia">Sepia Effect</option>
+                <option value="multi-layer-box-shadow">MultiLayer Box Shadow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img  src="assets/MEAN stack course with alphabets only.png" class="card-img-top" alt="..." />
+            <div class="effect-selector">
+              <!-- <h5 class="">Select Effect</h5> -->
+              <select class="effect-options">
+                <option value="normal">Normal</option>
+                <option value="opacity-0.5">Opacity 0.5</option>
+                <option value="rotate-180">Rotation of 180*</option>
+                <option value="box-shadow">Box Shadow Effect</option>
+                <option value="sepia">Sepia Effect</option>
+                <option value="multi-layer-box-shadow">MultiLayer Box Shadow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="assets/Gen AI in professional font.png" class="card-img-top" alt="..." />
+            <div class="effect-selector">
+              <!-- <h5 class="">Select Effect</h5> -->
+              <select class="effect-options">
+                <option value="normal">Normal</option>
+                <option value="opacity-0.5">Opacity 0.5</option>
+                <option value="rotate-180">Rotation of 180*</option>
+                <option value="box-shadow">Box Shadow Effect</option>
+                <option value="sepia">Sepia Effect</option>
+                <option value="multi-layer-box-shadow">MultiLayer Box Shadow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 1%" class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="assets/professional wallpaper for DevOps.png" class="card-img-top" alt="..." />
+            
+            <div class="effect-selector">
+              <!-- <h5 class="">Select Effect</h5> -->
+              <select class="effect-options">
+                <option value="normal">Normal</option>
+                <option value="opacity-0.5">Opacity 0.5</option>
+                <option value="rotate-180">Rotation of 180*</option>
+                <option value="box-shadow">Box Shadow Effect</option>
+                <option value="sepia">Sepia Effect</option>
+                <option value="multi-layer-box-shadow">MultiLayer Box Shadow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="assets/1.png" class="card-img-top" alt="..." />
+            <div class="effect-selector">
+              <!-- <h5 class="">Select Effect</h5> -->
+              <select class="effect-options">
+                <option value="normal">Normal</option>
+                <option value="opacity-0.5">Opacity 0.5</option>
+                <option value="rotate-180">Rotation of  180*</option>
+                <option value="box-shadow">Box Shadow Effect</option>
+                <option value="sepia">Sepia Effect</option>
+                <option value="multi-layer-box-shadow">MultiLayer Box Shadow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="assets/MERN written big.png" class="card-img-top" alt="..." />
+            <div class="effect-selector">
+              <!-- <h5 class="">Select Effect</h5> -->
+              <select class="effect-options">
+                <option value="normal">Normal</option>
+                <option value="opacity-0.5">Opacity 0.5</option>
+                <option value="rotate-180">Rotation of 180*</option>
+                <option value="box-shadow">Box Shadow Effect</option>
+                <option value="sepia">Sepia Effect</option>
+                <option value="multi-layer-box-shadow">MultiLayer Box Shadow</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      // Get all effect selectors and images
+      const effectSelectors = document.querySelectorAll('.effect-selector');
+      const images = document.querySelectorAll('.card-img-top');
+  
+      // Add event listener to each effect selector
+      effectSelectors.forEach((selector, index) => {
+        selector.addEventListener('change', (e) => {
+          const selectedEffect = e.target.value;
+          applyEffect(images[index], selectedEffect);
+        });
+      });
+  
+      // Function to apply the selected effect to the image
+      function applyEffect(image, effect) {
+        switch (effect) {
+          case 'normal':
+            image.style = '';
+            break;
+          case 'opacity-0.5':
+            image.style.opacity = '0.5';
+            break;
+          case 'rotate-180':
+            image.style.transform = 'rotate(180deg)';
+            break;
+          case 'box-shadow':
+            image.style.boxShadow = '6px 2px 6px 2px rgb(26, 158, 211)';
+            break;
+          case 'sepia':
+            image.style.filter = 'sepia(0.8)';
+            break;
+          case 'multi-layer-box-shadow':
+            image.style.boxShadow = '1px 10px 1px rgb(230, 35, 35), 1px 1px 12px rgb(49, 141, 21), 10px 1px 1px rgb(25, 112, 211)';
+            break;
+          default:
+            console.error(`Unknown effect: ${effect}`);
+        }
+      }
+    </script>
    
-    <div style="padding: 1%" class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <img src="assets/1.png" class="card-img-top" alt="..." />
-          <h2 style="display: flex; justify-content: center">Normal Image</h2>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img
-            style="opacity: 0.5"
-            src="assets/1.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <h2 style="display: flex; justify-content: center">Opacity 0.5</h2>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img
-            style="transform: rotate(180deg)"
-            src="assets/1.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <h2 style="display: flex; justify-content: center">
-            Rotation of 180*
-          </h2>
-        </div>
-      </div>
-    </div>
-    <div style="padding: 1%" class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <img
-            style="box-shadow: 6px 2px 6px 2px rgb(26, 158, 211)"
-            src="assets/1.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <h2 style="display: flex; justify-content: center">
-            Box Shadow Effect
-          </h2>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img
-            style="filter: sepia(0.8)"
-            src="assets/1.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <h2 style="display: flex; justify-content: center">Sepia Effect</h2>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <img
-            style="
-              box-shadow: 1px 10px 1px rgb(230, 35, 35),
-                1px 1px 12px rgb(49, 141, 21), 10px 1px 1px rgb(25, 112, 211);
-            "
-            src="assets/1.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <h2 style="display: flex; justify-content: center">
-            MultiLayer Box Shadow
-          </h2>
-        </div>
-      </div>
-    </div>
-  </div>
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
       <!-- Section: Social media -->
       <section

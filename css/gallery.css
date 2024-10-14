@@ -1,5 +1,5 @@
 .col-sm-4:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 .col-sm-4 {
   transition-duration: 1s;
@@ -44,3 +44,28 @@
   footer{
     background-color: rgba(235, 236, 236, 0.404);
   }
+  .container {
+    margin-top: 20px;
+  }
+  .card {
+    margin-bottom: 20px;
+    border: 2px solid black;
+  }
+  .effect-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .effect-selector button {
+    margin-right: 10px;}
+    .cinzel-style {
+      font-family: "Cinzel", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      display: flex;
+      justify-content: center;
+      padding-left: 5%;
+    }
+  
