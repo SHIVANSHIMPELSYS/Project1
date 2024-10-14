@@ -86,7 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 5%;
+
 
   background-color: rgba(48, 15, 236, 0.068);
   padding: 2%;
@@ -286,11 +286,10 @@ footer {
 }
 #h5 {
   color: rgb(66, 111, 170);
-  display: flex;
-  /* margin-left: 10%; */
+  /* display: flex; */
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
-  margin-bottom: 1%;
+  /* margin-bottom: 1%; */
   padding: 2%;
 }
 #qwe a {
@@ -355,6 +354,16 @@ header {
   font-family: 'Times New Roman', Times, serif;
   font-size: large;}
 @media only screen and (max-width: 575px) {
+  #h5 {
+    color: rgb(66, 111, 170);
+    display: flex;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 1%;
+    padding: 2%;
+  }
+  
+ 
   #img11 {
     width: 100%;
   }
