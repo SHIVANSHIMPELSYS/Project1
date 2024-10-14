@@ -366,6 +366,13 @@ header {
   }
   
 @media only screen and (max-width: 575px) {
+  .con{
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+
+  }
   #h5 {
     color: rgb(66, 111, 170);
     display: flex;
