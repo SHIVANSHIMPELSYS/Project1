@@ -293,10 +293,7 @@ footer {
   margin-bottom: 1%;
 }
 #h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
+
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 0.5%;
   color: rgb(22, 67, 68);
@@ -526,5 +523,10 @@ header {
     padding-left: 1%;
     margin-left: 1%;
     box-shadow: 0 0 0 0;
+  }
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1692px;
   }
 }

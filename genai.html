@@ -1,392 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>LVC</title>
-       
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous"
-        />
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"
-        ></script>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        />
-        <style>
-          body{
-            font-family: "Trirong", serif;
-          }
-            .card{
-                margin-top: 5%;
-                /* border: 2px solid rgba(0, 132, 255, 0.623); */
-                box-shadow: 1px 5px 2px 5px  rgba(0, 132, 255, 0.623); 
-                /* height: 100vh; */
-              }
-              .card1{
-                margin-top: 2%;
-                margin-bottom: 2%;
-                /* height:60vh; */
-                
-                /* border: 2px solid rgba(0, 132, 255, 0.623); */
-                border: 2px solid rgba(0, 132, 255, 0.623);}
-                .dropdown-submenu {
-    position: relative;
-  }
-  
-  .dropdown-submenu:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    margin-top: 0;
-  }
-  
-  .dropdown-menu.show {
-    display: block;
-  } 
-  footer{
-            background-color: rgba(235, 236, 236, 0.404);
-          }
-  #a1{
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: x-large;
-  font-weight: 900;
-  color:rgb(30, 22, 68);
-  border-radius: 10px;
-  text-decoration: underline;
-}
-            
-        </style>
-        <script>
-          function fun1(value) {
-            
-              console.log("1234567890o")
-  
-      var pages = {
-          "1": "Teacher1",
-          "2": "Teacher2",
-          "3": "Teacher3",
-          "4": "Teacher4"
-      };
-  
-      // Redirect the user to the corresponding HTML page
-      alert("You want to study GenAI with "+pages[value])
-  }
-        </script>
-      </head>
-      <body>
-        <header style="box-shadow: 10px 3px 10px 5px rgba(14, 13, 13, 0.479);">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-               <a id="a1"
-                class="navbar-brand"
-                href="index.html"
-               
-              >
-             
-                LVC
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul  class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a style="font-family: 'Times New Roman', Times, serif;font-size: large;" class="nav-link mx-5" aria-current="page" href="index.html"
-                      >Home</a
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LVC</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      footer {
+        background-color: rgba(152, 161, 158, 0.11);
+      }
+
+      body {
+        font-family: "Trirong", serif;
+      }
+
+      .card {
+        margin-left: 8%;
+        margin-top: 2%;
+        margin-bottom: 8%;
+        /* height:100vh; */
+        /* border: 2px solid rgba(0, 132, 255, 0.623); */
+        box-shadow: 1px 5px 2px 5px rgba(0, 132, 255, 0.623);
+      }
+
+      .card1 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        /* height:60vh; */
+
+        border: 2px solid rgba(0, 132, 255, 0.623);
+        /* box-shadow: 1px 5px 2px 5px  rgba(0, 132, 255, 0.623); */
+      }
+
+      .dropdown-submenu {
+        position: relative;
+      }
+
+      .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+      }
+
+      footer {
+        background-color: rgba(235, 236, 236, 0.404);
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-top: 0;
+      }
+
+      .dropdown-menu.show {
+        display: block;
+      }
+
+      #a1 {
+        font-style: italic;
+        font-family: "Times New Roman", Times, serif;
+        font-size: x-large;
+        font-weight: 900;
+        color: rgb(30, 22, 68);
+        border-radius: 10px;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header style="box-shadow: 10px 3px 10px 5px rgba(14, 13, 13, 0.479)">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a id="a1" class="navbar-brand" href="index.html"> LVC </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item mx-5 dropdown">
+                <a
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="coursesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="mern.html"
+                      >MERN</a
                     >
-                  </li>
-                  <li class="nav-item mx-5 dropdown">
-                    <a
-                    style="font-family: 'Times New Roman', Times, serif;font-size: large;"
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="coursesDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                     Categories
-    
-                    </a>
                     <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                       <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="mern.html">MERN</a>
-                        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                          <li class="dropdown-submenu">
-                            <a class="dropdown-item" href="mongodb.html"><i class="fa-solid fa-database"></i>MongoDb</a>
-                            <a class="dropdown-item" href="expressjs.html"><i class="fa-brands fa-js"></i>Express-JS</a>
-                            <a class="dropdown-item" href="react.html"><i class="fa-brands fa-react"></i>React-JS</a>
-                            <a class="dropdown-item" href="nodejs.html"><i class="fa-brands fa-node"></i>Node-JS</a>
-                          </li>
-                        </ul>
+                        <a class="dropdown-item" href="mongodb.html"
+                          ><i class="fa-solid fa-database"></i>MongoDb</a
+                        >
+                        <a class="dropdown-item" href="expressjs.html"
+                          ><i class="fa-brands fa-js"></i>Express-JS</a
+                        >
+                        <a class="dropdown-item" href="react.html"
+                          ><i class="fa-brands fa-react"></i>React-JS</a
+                        >
+                        <a class="dropdown-item" href="nodejs.html"
+                          ><i class="fa-brands fa-node"></i>Node-JS</a
+                        >
                       </li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle" href="mean.html">MEAN</a>
-                        <ul class="dropdown-menu">
-                          <a class="dropdown-item" href="mongodb.html"><i class="fa-solid fa-database"></i>MongoDb</a>
-                            <a class="dropdown-item" href="expressjs.html"><i class="fa-brands fa-js"></i>Express-JS</a>
-                            <a class="dropdown-item" href="angular.html"><i class="fa-brands fa-angular"></i>Angular-JS</a>
-                            <a class="dropdown-item" href="nodejs.html"><i class="fa-brands fa-node"></i>Node JS</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
-                      <li><a class="dropdown-item" href="devops.html">DevOps</a></li>
                     </ul>
                   </li>
-    
-                  <li class="nav-item">
-                    <a style="font-family: 'Times New Roman', Times, serif;font-size: large;" class="nav-link mx-5" href="registration.html"
-                      >Register</a
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="mean.html"
+                      >MEAN</a
                     >
+                    <ul class="dropdown-menu">
+                      <a class="dropdown-item" href="mongodb.html"
+                        ><i class="fa-solid fa-database"></i>MongoDb</a
+                      >
+                      <a class="dropdown-item" href="expressjs.html"
+                        ><i class="fa-brands fa-js"></i>Express-JS</a
+                      >
+                      <a class="dropdown-item" href="angular.html"
+                        ><i class="fa-brands fa-angular"></i>Angular-JS</a
+                      >
+                      <a class="dropdown-item" href="nodejs.html"
+                        ><i class="fa-brands fa-node"></i>Node JS</a
+                      >
+                    </ul>
                   </li>
-    
-                  <li class="nav-item">
-                    <a  style="font-family: 'Times New Roman', Times, serif;font-size: large;"class="nav-link mx-5" href="gallery.html"
-                      >Gallery</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a style="font-family: 'Times New Roman', Times, serif; font-size: large;" class="nav-link mx-5" href="contactus.html"
-                      > Contact Us</a
-                    >
+                  <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
+                  <li>
+                    <a class="dropdown-item" href="devops.html">DevOps</a>
                   </li>
                 </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  href="registration.html"
+                  >Register</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  href="gallery.html"
+                  >Gallery</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  style="
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: large;
+                  "
+                  class="nav-link mx-5"
+                  href="contactus.html"
+                >
+                  Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1
+        style="
+          background-color: rgba(2, 23, 209, 0.199);
+          display: flex;
+          justify-content: center;
+          font-weight: 500;
+          font-family: 'Times New Roman', Times, serif;
+          color: rgb(66, 66, 104);
+        "
+      >
+        Bring your goals into focus
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div
+            style="margin-bottom: 5%; justify-content: center"
+            class="col-sm-8"
+          >
+            <div style="display: block">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="assets/Gen AI in professional font.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5
+                    style="display: flex; justify-content: center"
+                    class="card-title"
+                  >
+                    Gen-AI
+                  </h5>
+                  <p
+                    style="display: flex; justify-content: center"
+                    class="card-text"
+                  ></p>
+                  <div style="display: flex; justify-content: center">
+                    <form
+                      style="
+                        width: 100vh;
+                        box-shadow: 1px 1px 5px 5px rgb(94, 150, 214);
+                        margin-top: 10%;
+                        margin-bottom: 2%;
+                      "
+                      name="search_form"
+                      onsubmit="fun1(this.site.value); return false"
+                    >
+                      <h3>Available Faculty</h3>
+
+                      <input
+                        style="margin-left: 5%"
+                        type="radio"
+                        name="site"
+                        value="1"
+                        checked
+                      />
+                      Tapan Kumar
+                      <br />
+
+                      <input
+                        style="margin-left: 5%; margin-bottom: 2%"
+                        style="display: flex; justify-content: center"
+                        type="submit"
+                        value="Start"
+                      />
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
-          </nav>
-        </header>
-        <section>
-          <h1 style=" background-color: rgba(2, 23, 209, 0.199);  display:flex;justify-content: center; font-weight: 500; font-family: 'Times New Roman', Times, serif; color: rgb(66, 66, 104);" >Bring your goals into focus</h1>
-          
 
-<div class="row">
+            <div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Gen-AI
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Generative AI, also known as Gen AI, refers to a type of
+                      artificial intelligence that can generate new, original
+                      content, such as images, videos, music, text, or even
+                      entire conversations. This technology uses machine
+                      learning algorithms to learn patterns and relationships
+                      within large datasets, enabling it to create novel outputs
+                      that are often indistinguishable from those created by
+                      humans.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div style="margin-bottom: 5%; display: flex;justify-content: center;" class="col-sm-8">
+          <div
+            style="background-color: rgba(48, 15, 236, 0.068)"
+            class="col-sm-4"
+          >
+            <h2
+              style="
+                display: flex;
+                justify-content: center;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              Explore More
+            </h2>
 
-<div>
-  <div class="card" style="width: 18rem;">
-    <img src="assets/professional wallpaper for GenAI.png" class="card-img-top" alt="...">
-    <div  class="card-body">
-      <h5 style="display: flex;justify-content: center;" class="card-title">GenAI</h5>
-      <p style="display: flex;justify-content: center;" class="card-text">GenAI is not a specific technology or framework, but rather a term that refers to General Artificial Intelligence, which is a type of artificial intelligence that can perform any intellectual task that a human can.
+            <div
+              style="display: flex; justify-content: center; margin-bottom: 5%"
+            >
+              <div class="card1" style="width: 18rem">
+                <img src="assets/node.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    style="display: flex; justify-content: center"
+                    class="card-title"
+                  >
+                    Node JS
+                  </h5>
 
-      </p>
-      <div style="display: flex;justify-content: center;">
-        <form style=" width: 100vh; box-shadow: 1px 1px 5px 5px rgb(94, 150, 214); margin-top: 10%; margin-bottom: 2%;" name="search_form" onsubmit="fun1(this.site.value); return false">
-         <h3>Available Faculty</h3>
-        
-          <input  style="margin-left: 5%;" type="radio" name="site" value="1" checked> TEACHER1
-          <br>
-          <input  style="margin-left: 5%;" type="radio" name="site" value="2"> TEACHER2
-          <br>
-          <input  style="margin-left: 5%;" type="radio" name="site" value="3"> TEACHER3
-          <br>
-          <input  style="margin-left: 5%;" type="radio" name="site" value="4"> TEACHER4
-          <br>
-          <input  style="margin-left: 5%; margin-bottom: 2%;" style="display: flex;justify-content: center;" type="submit" value="Start">
-      </form>
-    </div> 
-    </div>
-  </div>
+                  <a
+                    style="display: flex; justify-content: center"
+                    href="nodejs.html"
+                    class="btn btn-primary"
+                    >View Course</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <div class="card1" style="width: 18rem">
+                <img src="assets/express.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5
+                    style="display: flex; justify-content: center"
+                    class="card-title"
+                  >
+                    Express-JS
+                  </h5>
 
-</div>
-
-
- 
-
-
-
-
-
-
-</div>
-
-
-<div  style="  background-color: rgba(48, 15, 236, 0.068);" class="col-sm-4">
-  <h2 style="display: flex; justify-content: center; font-family:Arial, Helvetica, sans-serif;">Explore More</h2>
-
-  <div style="display: flex;justify-content: center;margin-bottom: 5% ;">
-  <div class="card1" style="width: 18rem;">
-    <img src="assets/node.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 style="display: flex;justify-content: center;" class="card-title">Node JS</h5>
-   
-      <a style="display: flex;justify-content: center;" href="nodejs.html" class="btn btn-primary">Node JS</a>
-    </div>
-  </div>
-</div>
-<div style="display: flex;justify-content: center;">
-  <div class="card1" style="width: 18rem;">
-    <img src="assets/express.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 style="display: flex;justify-content: center;" class="card-title">Express-JS</h5>
-     
-      <a style="display: flex;justify-content: center;" href="expressjs.html" class="btn btn-primary">Express-JS</a>
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Live Virtual Class
-          </h6>
-          <p>
-          This is a Live Virtual Class and Shivansh has all rights reserved for it 2024.
-          </p>
+                  <a
+                    style="display: flex; justify-content: center"
+                    href="expressjs.html"
+                    class="btn btn-primary"
+                    >View Course</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-          <p>
-            <a href="angular.html" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="react.html" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="devops.html" class="text-reset">DevOps</a>
-          </p>
-          <p>
-            <a href="genai.html" class="text-reset">GenAI</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-          <p>
-            <a href="registration.html"class=" text-reset">Regsiter</a>
-          </p>
-          <p>
-            <a href="contactus.html" class="text-reset">Contact Us</a>
-          </p>
-          <p>
-            <a href="mongodb.html" class="text-reset">Courses</a>
-          </p>
-          <p>
-            <a href="index.html" class="text-reset">Home</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> Impelsys Pvt Ltd Bangalore</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-           shivansh.s@impelsys.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> 9876543210</p>
-        
-        </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
 
-  <!-- Copyright -->
-  <div
-    class="text-center p-4"
-    style="background-color: rgba(0, 0, 0, 0.05)"
-  >
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="">LVC.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
 
-
-            
-               
-             
-        
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
         </section>
-        </html>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Live Virtual Class
+                </h6>
+                <p>
+                  This is a Live Virtual Class and Shivansh has all rights
+                  reserved for it 2024.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="angular.html" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="react.html" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="devops.html" class="text-reset">DevOps</a>
+                </p>
+                <p>
+                  <a href="genai.html" class="text-reset">GenAI</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="registration.html" class="text-reset">Regsiter</a>
+                </p>
+                <p>
+                  <a href="contactus.html" class="text-reset">Contact Us</a>
+                </p>
+                <p>
+                  <a href="mongodb.html" class="text-reset">Courses</a>
+                </p>
+                <p>
+                  <a href="index.html" class="text-reset">Home</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p>
+                  <i class="fas fa-home me-3"></i> Impelsys Pvt Ltd Bangalore
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  shivansh.s@impelsys.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 9876543210</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="">LVC.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </section>
+  </body>
+</html>
