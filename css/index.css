@@ -331,6 +331,7 @@ footer {
   margin-right: 2%;
   margin-top: 0%;
   width: 100%;
+  transition: .5s;
 }
 #row1div:hover {
   box-shadow: 1px 2px 15px 1px rgba(22, 22, 22, 0.808);
@@ -354,7 +355,7 @@ header {
   /* padding: 1%; */
 }
 .container {
-  width: 95%;
+  width: 100%;
 }
 #img11 {
   border-radius: 20%;

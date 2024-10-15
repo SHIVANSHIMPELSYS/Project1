@@ -70,7 +70,15 @@
       .dropdown-menu.show {
         display: block;
       }
-
+      .cinzel-style {
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        padding-left: 5%;
+      }
       #a1 {
         font-style: italic;
         font-family: "Times New Roman", Times, serif;
@@ -81,10 +89,16 @@
         text-decoration: underline;
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Gowun+Dodum&family=Handlee&family=Montaga&family=Nanum+Myeongjo:wght@400;700;800&family=Platypi:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header style="box-shadow: 10px 3px 10px 5px rgba(14, 13, 13, 0.479)">
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a id="a1" class="navbar-brand" href="index.html"> LVC </a>
@@ -218,13 +232,11 @@
       </nav>
     </header>
     <section>
-      <h1
+      <h1 class="cinzel-style"
         style="
           background-color: rgba(2, 23, 209, 0.199);
           display: flex;
           justify-content: center;
-          font-weight: 500;
-          font-family: 'Times New Roman', Times, serif;
           color: rgb(66, 66, 104);
         "
       >
@@ -323,15 +335,16 @@
             style="background-color: rgba(48, 15, 236, 0.068)"
             class="col-sm-4"
           >
-            <h2
-              style="
-                display: flex;
-                justify-content: center;
-                font-family: Arial, Helvetica, sans-serif;
-              "
-            >
-              Explore More
-            </h2>
+          <h2 class="cinzel-style"
+          style="
+            display: flex;
+            justify-content: center;
+            
+          "
+        >
+          Explore More
+        </h2>
+
 
             <div
               style="display: flex; justify-content: center; margin-bottom: 5%"
