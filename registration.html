@@ -51,7 +51,7 @@
 
         // If all validations pass, submit the form
         console.log("Fun1 executed ");
-        window.location.href = "sub.html";
+        // window.location.href = "sub.html";
         return true;
       }
       function fun2() {
@@ -82,6 +82,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/registration.css" />
+    <!-- <script>
+      const form = document.getElementById('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const name = formData.get('name');
+  sessionStorage.setItem('userName', name);
+  window.location.href = 'index.html';
+});
+    </script> -->
   </head>
 
   <body>
@@ -242,7 +253,7 @@
       <div style="background-color: white" class="col-sm-6">
         <section>
           <div id="div1">
-            <form onsubmit="fun1(event)" action="sub.html">
+            <form id="form" onsubmit="fun1(event)" action="sub.html">
               <h3 class="gowun-dodum-regular">
                 <p style="display: flex; justify-content: center">
                   Registration Details
@@ -343,9 +354,8 @@
           />
           <br />
 
-          <img style="width: 100%;" src="assets/a registration page image for a
-          higher education website with adults, width of screen size and height
-          60vh.png"
+          <img style="width: 100%;" src="assets/4k wallpaper with blue background color with computer in it.png"
+          alt=""/>
         </div>
       </div>
     </div>

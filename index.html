@@ -41,6 +41,21 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Gowun+Dodum&family=Montaga&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <script>
+      const navbar = document.querySelector("nav");
+      const userName = sessionStorage.getItem("userName");
+
+      if (userName) {
+        const signinLink = document.querySelector("#signin-link");
+        signinLink.textContent = `Welcome, ${userName}!`;
+        signinLink.href = "#"; // Remove the href attribute to prevent navigation
+      } else {
+        // If no username is stored, show the original signin link
+        const signinLink = document.querySelector("#signin-link");
+        signinLink.textContent = "Sign In";
+        signinLink.href = "registration.html";
+      }
+    </script>
   </head>
 
   <body>
@@ -147,13 +162,21 @@
                   Contact Us</a
                 >
               </li>
+              <!-- <li class="nav-item">
+                <a
+                  id="signin-link"
+                  class="nav-link mx-5"
+                  href="registration.html"
+                >
+                  Sign In
+                </a>
+              </li> -->
             </ul>
           </div>
         </div>
       </nav>
     </header>
-   
-  
+
     <div class="con">
       <section id="first">
         <div class="row">
@@ -162,21 +185,57 @@
               Live Virtual Classes
             </h2>
             <br /><br />
-            <div style="margin-left: 2%; display: flex; justify-content: center">
+            <div
+              style="margin-left: 2%; display: flex; justify-content: center"
+            >
               <h3 class="montaga-regular">
-                Elevate Your Digital Expertise, Amplify Your Career: Stay Ahead in
-                the Tech Curve with Our Expert Online Training
+                Elevate Your Digital Expertise, Amplify Your Career: Stay Ahead
+                in the Tech Curve with Our Expert Online Training
               </h3>
             </div>
             <div id="center">
-              <button
-                id="center"
-                type="button"
-                class="btn btn-primary"
-                onclick="window.location.href='registration.html'; "
-              >
-                Start Your Course Today
-              </button>
+              <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Join LVC</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       Subscribe to LVC
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="display: flex;justify-content: center;" class="montaga-regular" id="exampleModalLabel">Welcome to LVC</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="montaga-regular" style="padding: 2%; display: flex;justify-content: center; align-items: center;" class="modal-body">
+            Email ID
+    
+            <input style="margin-left: 2%; "type= "text" placeholder="Email">
+            <br>
+            <button style="margin-left: 2%;" type="button" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+              
             </div>
           </div>
           <div id="center" class="col-sm-6">
@@ -185,274 +244,288 @@
         </div>
       </section>
     </div>
-    
+
     <div class="container">
-
-    <div id="h5">
-      <h2>Must Watch Courses</h2>
-    </div>
-    <section id="section2">
-      <div class="row">
-        <div id="qwe" class="col-sm-2">
-          <div class="card" id="card1">
-            <a href="react.html"
-              ><img
-                src="assets/professional wallpaper for React.js.png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="react.html"> REACT JS</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-2">
-          <div class="card" id="card1">
-            <a href="angular.html"
-              ><img
-                src="assets/professional wallpaper featuring AngularJS.png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="angular.html">ANGULAR</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-2">
-          <div class="card" id="card1">
-            <a href="genai.html">
-              <img
-                src="assets/Gen AI in professional font.png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="genai.html">GEN AI</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-2">
-          <div class="card" id="card1">
-            <a href="devops.html"
-              ><img
-                src="assets/professional wallpaper for DevOps.png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="devops.html">DEVOPS</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-2">
-          <div class="card" id="card1">
-            <a href="expressjs.html">
-              <img src="assets/express.png" class="card-img-top" alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="expressjs.html">Express-JS</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-2">
-          <div class="card" id="card1">
-            <a href="nodejs.html"
-              ><img src="assets/node.png" class="card-img-top" alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="nodejs.html">Node-JS</a>
-              </h4>
-            </div>
-          </div>
-        </div>
+      <div id="h5">
+        <h2>Must Watch Courses</h2>
       </div>
-    </section>
-    <section id="section3">
-      <div >
-        <h1 id="h34">Make your next move in tech</h1>
-        <h5 id="h3">
-          LVC gives you the tools, resources, and support you need to reach your
-          career goal in tech.
-        </h5>
-      </div>
-    </section>
-
-    <section id="section3">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="card h-100">
-            <img src="assets/htmlcss.png" class="card-img-top" alt="..." />
-          </div>
-        </div>
-        <div id="div6" class="col-sm-8">
-          <h2 id="h2">HTML/CSS</h2>
-          <p>
-            <span id="span1">HTML</span>
-            (Hypertext Markup Language)<br />
-
-            creates the structure and content of a web page.<br />
-            It uses elements (tags: <>) to define parts of a page, such as
-            headings, paragraphs, images, and links.
-            <br /><br /><br />
-          </p>
-
-          <p>
-            <span id="span1">CSS</span>
-            (Cascading Style Sheets)<br />
-
-            CSS controls the layout, appearance, and behavior of a web page.<br />
-            It adds styles, such as colors, fonts, and spacing, to HTML
-            elements.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="section3">
-      <div class="container">
+      <section id="section2">
         <div class="row">
-          <div class="col-sm-6">
-            <h1 id="h34">Transform Your Career With LVC Education</h1>
-            <h5 id="h3">
-              Infused with the latest Gen AI tools, this UI/UX Design Program
-              ensures a strong career in design through a learning pedagogy that
-              focuses on both theory and practical learning, from the
-              fundamentals to the advanced topics.
-            </h5>
+          <div id="qwe" class="col-sm-2">
+            <div class="card" id="card1">
+              <a href="react.html"
+                ><img
+                  src="assets/professional wallpaper for React.js.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="react.html"> REACT JS</a>
+                </h4>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6">
-            <div class="row">
-              <div id="divv" class="col-sm-4">
-                <div id="row1div">
-                  <span id="span2"> Hands-on Weekly Assignments</span>
-                </div>
-                <div id="row1div">
-                  <span id="span2">Live Industry Project Certificate</span>
-                </div>
+          <div id="qwe" class="col-sm-2">
+            <div class="card" id="card1">
+              <a  href="angular.html"
+                ><img
+                  src="assets/professional wallpaper featuring AngularJS.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="angular.html">ANGULAR</a>
+                </h4>
               </div>
-              <div id="divv" class="col-sm-4">
-                <div id="row1div">
-                  <span id="span2"
-                    >Dedicated Portfolio Development Sessions</span
-                  >
-                </div>
-                <div id="row1div">
-                  <span id="span2">Tool-based Learning </span>
-                </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-2">
+            <div class="card" id="card1">
+              <a href="genai.html">
+                <img
+                  src="assets/Gen AI in professional font.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="genai.html">GEN AI</a>
+                </h4>
               </div>
-              <div id="divv" class="col-sm-4">
-                <div id="row1div">
-                  <span id="span2">Real-world Practitioners</span>
-                </div>
-                <div id="row1div">
-                  <span id="span2"> Gen-AI Integrated Curriculum</span>
-                </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-2">
+            <div class="card" id="card1">
+              <a href="devops.html"
+                ><img
+                  src="assets/professional wallpaper for DevOps.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="devops.html">DEVOPS</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-2">
+            <div class="card" id="card1">
+              <a href="expressjs.html">
+                <img src="assets/express.png" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="expressjs.html">Express-JS</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-2">
+            <div class="card" id="card1">
+              <a href="nodejs.html"
+                ><img src="assets/node.png" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="nodejs.html">Node-JS</a>
+                </h4>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="section3">
+        <div>
+          <h1 id="h34">Make your next move in tech</h1>
+          <h5 id="h3">
+            LVC gives you the tools, resources, and support you need to reach
+            your career goal in tech.
+          </h5>
+        </div>
+      </section>
 
-    <section id="section3">
-      <div class="container">
+      <section id="section3">
         <div class="row">
-          <div class="col-12">
-            <h1 id="h34">Learning focused on your goals</h1>
-            <h5 id="h3">
-              Get access to videos in over 90% of courses, Specializations, and
-              Professional Certificates taught by top instructors from leading
-              universities and companies.
-            </h5>
+          <div class="col-sm-4">
+            <div class="card h-100">
+              <img src="assets/htmlcss.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div id="div6" class="col-sm-8">
+            <h2 id="h2">HTML/CSS</h2>
+            <p>
+              <span id="span1">HTML</span>
+              (Hypertext Markup Language)<br />
+
+              creates the structure and content of a web page.<br />
+              It uses elements (tags: <>) to define parts of a page, such as
+              headings, paragraphs, images, and links.
+              <br /><br /><br />
+            </p>
+
+            <p>
+              <span id="span1">CSS</span>
+              (Cascading Style Sheets)<br />
+
+              CSS controls the layout, appearance, and behavior of a web
+              page.<br />
+              It adds styles, such as colors, fonts, and spacing, to HTML
+              elements.
+            </p>
           </div>
         </div>
+      </section>
+
+      <section id="section3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <h1 id="h34">Transform Your Career With LVC Education</h1>
+              <h5 id="h3">
+                Infused with the latest Gen AI tools, this UI/UX Design Program
+                ensures a strong career in design through a learning pedagogy
+                that focuses on both theory and practical learning, from the
+                fundamentals to the advanced topics.
+              </h5>
+            </div>
+            <div class="col-sm-6">
+              <div class="row">
+                <div id="divv" class="col-sm-4">
+                  <div id="row1div">
+                    <span id="span21"
+                      ><i class="fa-solid fa-hands-holding"></i></span
+                    ><br />
+                    <span id="span2"> Hands-on Weekly Assignments</span>
+                  </div>
+                  <div id="row1div">
+                    <span id="span21"
+                      ><i class="fa-solid fa-certificate"></i></span
+                    ><br />
+                    <span id="span2">Live Industry Project Certificate</span>
+                  </div>
+                </div>
+                <div id="divv" class="col-sm-4">
+                  <div id="row1div">
+                    <span id="span21"><i class="fa-solid fa-user-tie"></i></span
+                    ><br />
+                    <span id="span2"
+                      >Dedicated Portfolio Development Sessions</span
+                    >
+                  </div>
+                  <div id="row1div">
+                    <span id="span21"><i class="fa-solid fa-fire"></i></span
+                    ><br />
+                    <span id="span2">Tool-based Learning </span>
+                  </div>
+                </div>
+                <div id="divv" class="col-sm-4">
+                  <div id="row1div">
+                    <span id="span21"><i class="fa-solid fa-globe"></i></span
+                    ><br />
+                    <span id="span2">Real-world Practitioners</span>
+                  </div>
+                  <div id="row1div">
+                    <span id="span21"><i class="fa-regular fa-clone"></i></span
+                    ><br />
+                    <span id="span2"> Gen-AI Integrated Curriculum</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 id="h34">Learning focused on your goals</h1>
+              <h5 id="h3">
+                Get access to videos in over 90% of courses, Specializations,
+                and Professional Certificates taught by top instructors from
+                leading universities and companies.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="h5">
+        <h2>Foundation Course For Web Professionals</h2>
       </div>
-    </section>
-    <div id="h5">
-      <h2>Foundation Course For Web Professionals</h2>
+
+      <section id="section5">
+        <div class="row">
+          <div id="qwe" class="col-sm-3">
+            <div id="card1" class="card">
+              <a href="nodejs.html"
+                ><img
+                  src="assets/professional wallpaper for HTML HD.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="nodejs.html">HTML</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-3">
+            <div id="card1" class="card">
+              <a href="mongodb.html">
+                <img
+                  src="assets/professional wallpaper for CSS (1).png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="mongodb.html">CSS</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-3">
+            <div id="card1" class="card">
+              <a href="expressjs.html">
+                <img src="assets/javascript.png" class="card-img-top" alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="expressjs.html">JAVASCRIPT</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div id="qwe" class="col-sm-3">
+            <div id="card1" class="card">
+              <a href="expressjs.html"
+                ><img
+                  src="assets/professional wallpaper for Bootstrap.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h4 id="h4">
+                  <a class="prata-regular" href="expressjs.html">BOOTSTRAP</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section6">
+        <div class="image-container">
+          <img src="assets/qwertyy.png" class="image" alt="Image" />
+        </div>
+      </section>
     </div>
-
-    <section id="section5">
-      <div class="row">
-        <div id="qwe" class="col-sm-3">
-          <div id="card1" class="card">
-            <a href="nodejs.html"
-              ><img
-                src="assets/professional wallpaper for HTML HD.png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="nodejs.html">HTML</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-3">
-          <div id="card1" class="card">
-            <a href="mongodb.html">
-              <img
-                src="assets/professional wallpaper for CSS (1).png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="mongodb.html">CSS</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-3">
-          <div id="card1" class="card">
-            <a href="expressjs.html">
-              <img src="assets/javascript.png" class="card-img-top" alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="expressjs.html">JAVASCRIPT</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div id="qwe" class="col-sm-3">
-          <div id="card1" class="card">
-            <a href="expressjs.html"
-              ><img
-                src="assets/professional wallpaper for Bootstrap.png"
-                class="card-img-top"
-                alt="..."
-            /></a>
-            <div class="card-body">
-              <h4 id="h4">
-                <a href="expressjs.html">BOOTSTRAP</a>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="section6">
-      <div class="image-container">
-        <img src="assets/qwertyy.png" class="image" alt="Image" />
-      </div>
-    </section>
-  </div>
     <footer class="text-center text-lg-start bg-body-tertiary text-muted">
       <section
         class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
