@@ -48,7 +48,7 @@ footer {
 }
 .card {
   margin-bottom: 20px;
-  border: 2px solid black;
+ box-shadow: 2px 2px 5px 5px rgba(133, 121, 184, 0.479);
 }
 .effect-selector {
   display: flex;
