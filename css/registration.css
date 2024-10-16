@@ -25,7 +25,13 @@ body {
     margin-lefT:5%;
     margin-right: 5%;
   }
+  #a11 {
+    font-family: "Cinzel", serif;
+    font-size: large;
+    font-weight: 700;
+  }
   #a11:hover{
+
     color: rgba(122, 85, 223, 0.733);
     text-decoration: underline;
   }

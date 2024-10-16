@@ -56,6 +56,11 @@ footer {
   align-items: center;
   margin-top: 10%;
 }
+#a11 {
+  font-family: "Cinzel", serif;
+  font-size: large;
+  font-weight: 700;
+}
 .effect-selector button {
   margin-right: 10px;
 }

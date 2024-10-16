@@ -5,7 +5,7 @@ body {
 #div5 {
   text-align: center;
 }
-#a11:hover{
+#a11:hover {
   color: rgba(122, 85, 223, 0.733);
   text-decoration: underline;
 }
@@ -81,35 +81,36 @@ textarea:focus {
   display: block;
 }
 
-
 #a11 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: large;}
-  .cinzel-style {
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    padding-left: 5%;
-  }
-  .gowun-dodum-regular {
-    font-family: "Montaga", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  #a1{
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style:normal;
-    color: rgb(30, 22, 68);
-    border-radius: 10px;
-    /* text-decoration: underline; */
-  }
-  
-  
+  font-family: "Cinzel", serif; 
+  font-weight: 400;
+  font-weight: 700;
+  font-style: normal;
+  font-size: large;
+}
+.cinzel-style {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+}
+.gowun-dodum-regular {
+  font-family: "Montaga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#a1 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(30, 22, 68);
+  border-radius: 10px;
+  /* text-decoration: underline; */
+}
 
 @media only screen and (max-width: 575px) {
   .row {

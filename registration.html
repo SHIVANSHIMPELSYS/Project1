@@ -81,7 +81,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/registration.css" />
+    
     <!-- <script>
       const form = document.getElementById('form');
 
@@ -93,150 +93,259 @@ form.addEventListener('submit', (e) => {
   window.location.href = 'index.html';
 });
     </script> -->
-  </head>
+    <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
-  <body>
- 
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-   
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a id="a1" class="navbar-brand" href="index.html"> LVC </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+  </script>
+  <style type="text/css">
+    .bs-example {
+      margin: 20px;
+    }
+    .panel-title .glyphicon {
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      // Add minus icon for collapse element which is open by default
+      $(".collapse.in").each(function () {
+        $(this)
+          .siblings(".panel-heading")
+          .find(".glyphicon")
+          .addClass("glyphicon-minus")
+          .removeClass("glyphicon-plus");
+      });
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a
-                  id="a11"
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item mx-5 dropdown">
-                <a
-                  id="a11"
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="coursesDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Categories
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="mern.html"
-                      >MERN</a
-                    >
-                    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-item" href="mongodb.html"
-                          ><i class="fa-solid fa-database"></i>MongoDb</a
-                        >
-                        <a class="dropdown-item" href="expressjs.html"
-                          ><i class="fa-brands fa-js"></i>Express-JS</a
-                        >
-                        <a class="dropdown-item" href="react.html"
-                          ><i class="fa-brands fa-react"></i>React-JS</a
-                        >
-                        <a class="dropdown-item" href="nodejs.html"
-                          ><i class="fa-brands fa-node"></i>Node-JS</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item dropdown-toggle" href="mean.html"
-                      >MEAN</a
-                    >
-                    <ul class="dropdown-menu">
-                      <a class="dropdown-item" href="mongodb.html"
+      // Toggle plus minus icon on show hide of collapse element
+      $(".collapse")
+        .on("show.bs.collapse", function () {
+          $(this)
+            .parent()
+            .find(".glyphicon")
+            .removeClass("glyphicon-plus")
+            .addClass("glyphicon-minus");
+        })
+        .on("hide.bs.collapse", function () {
+          $(this)
+            .parent()
+            .find(".glyphicon")
+            .removeClass("glyphicon-minus")
+            .addClass("glyphicon-plus");
+        });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/registration.css" />
+</head>
+
+<body>
+  <header id="header1">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a
+          id="a1"
+          class="navbar-brand"
+          href="index.html"
+          data-bs-toggle="tooltip"
+          data-bs-title="Go to Home"
+          >LVC</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                id="a11"
+                class="nav-link mx-5"
+                aria-current="page"
+                href="index.html"
+                data-bs-toggle="tooltip"
+                data-bs-title="Home Page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-5 dropdown">
+              <a
+                id="a11"
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-title="Categories"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="mern.html"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Learn about MERN stack"
+                    >MERN</a
+                  >
+                  <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                    <li class="dropdown-submenu">
+                      <a
+                        class="dropdown-item"
+                        href="mongodb.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn MongoDB"
                         ><i class="fa-solid fa-database"></i>MongoDb</a
                       >
-                      <a class="dropdown-item" href="expressjs.html"
+                      <a
+                        class="dropdown-item"
+                        href="expressjs.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn Express.js"
                         ><i class="fa-brands fa-js"></i>Express-JS</a
                       >
-                      <a class="dropdown-item" href="angular.html"
-                        ><i class="fa-brands fa-angular"></i>Angular-JS</a
+                      <a
+                        class="dropdown-item"
+                        href="react.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn React.js"
+                        ><i class="fa-brands fa-react"></i>React-JS</a
                       >
-                      <a class="dropdown-item" href="nodejs.html"
-                        ><i class="fa-brands fa-node"></i>Node JS</a
+                      <a
+                        class="dropdown-item"
+                        href="nodejs.html"
+                        data-bs-toggle="tooltip"
+                        data-bs-title="Learn Node.js"
+                        ><i class="fa-brands fa-node"></i>Node-JS</a
                       >
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href="genai.html">GenAI</a></li>
-                  <li>
-                    <a class="dropdown-item" href="devops.html">DevOps</a>
-                  </li>
-                </ul>
-              </li>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a
+                    class="dropdown-item dropdown-toggle"
+                    href="mean.html"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Learn about MEAN stack"
+                    >MEAN</a
+                  >
+                  <ul class="dropdown-menu">
+                    <a
+                      class="dropdown-item"
+                      href="mongodb.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn MongoDB"
+                      ><i class="fa-solid fa-database"></i>MongoDb</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="expressjs.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn Express.js"
+                      ><i class="fa-brands fa-js"></i>Express-JS</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="angular.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn Angular.js"
+                      ><i class="fa-brands fa-angular"></i>Angular-JS</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="nodejs.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Learn Node.js"
+                      ><i class="fa-brands fa-node"></i>Node JS</a
+                    >
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="genai.html"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Learn about GenAI"
+                    >GenAI</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="devops.html"
+                    data-bs-toggle="tooltip"
+                    data-bs-title="Learn about DevOps"
+                    >DevOps</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-              <li class="nav-item">
-                <a
-                  id="a11"
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  href="registration.html"
-                  >Register</a
-                >
-              </li>
+            <li class="nav-item">
+              <a
+                id="a11"
+                class="nav-link mx-5"
+                href="registration.html"
+                data-bs-toggle="tooltip"
+                data-bs-title="Register Now"
+                >Register</a
+              >
+            </li>
 
-              <li class="nav-item">
-                <a
-                  id="a11"
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  href="gallery.html"
-                  >Gallery</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  id="a11"
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  href="contactus.html"
-                >
-                  Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a
+                id="a11"
+                class="nav-link mx-5"
+                href="gallery.html"
+                data-bs-toggle="tooltip"
+                data-bs-title="View Gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="a11"
+                class="nav-link mx-5"
+                href="contactus.html"
+                data-bs-toggle="tooltip"
+                data-bs-title="Get in Touch"
+                >Contact Us</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                id="signin-link"
+                class="nav-link mx-5"
+                href="registration.html"
+                data-bs-toggle="tooltip" data-bs-title="Sign In"
+              >
+                Sign In
+              </a>
+            </li> -->
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
     <h1
     class="cinzel-style"
     style="background-color: rgba(2, 23, 209, 0.199)"

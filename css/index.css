@@ -373,8 +373,9 @@ header {
   text-decoration: underline;
 }
 #a11{ 
-  font-family: 'Times New Roman', Times, serif;
-  font-size: large;}
+  font-family: "Cinzel", serif;
+  font-size: large;
+  font-weight: 700;}
   .montaga-regular {
     font-family: "Montaga", serif;
     font-weight: 400;

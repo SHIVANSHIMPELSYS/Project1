@@ -20,6 +20,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Gowun+Dodum&family=Handlee&family=Montaga&family=Nanum+Myeongjo:wght@400;700;800&family=Platypi:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       footer {
         background-color: rgba(152, 161, 158, 0.11);
@@ -28,7 +35,14 @@
       body {
         font-family: "Trirong", serif;
       }
-
+      #a11:hover {
+        color: rgba(122, 85, 223, 0.733);
+        text-decoration: underline;
+      }
+      #a11{ 
+  font-family: "Cinzel", serif;
+  font-size: large;
+  font-weight: 700;}
       .card {
         margin-left: 8%;
         margin-top: 2%;
@@ -81,21 +95,15 @@
       }
 
       #a1 {
-        font-style: italic;
-        font-family: "Times New Roman", Times, serif;
-        font-size: x-large;
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
         font-weight: 900;
+        font-style: normal;
         color: rgb(30, 22, 68);
         border-radius: 10px;
-        text-decoration: underline;
+        /* text-decoration: underline; */
       }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Gowun+Dodum&family=Handlee&family=Montaga&family=Nanum+Myeongjo:wght@400;700;800&family=Platypi:ital,wght@0,300..800;1,300..800&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -119,10 +127,7 @@
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
+                  id="a11"
                   class="nav-link mx-5"
                   aria-current="page"
                   href="index.html"
@@ -131,10 +136,7 @@
               </li>
               <li class="nav-item mx-5 dropdown">
                 <a
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
+                  id="a11"
                   class="nav-link dropdown-toggle"
                   href="#"
                   id="coursesDropdown"
@@ -193,37 +195,18 @@
               </li>
 
               <li class="nav-item">
-                <a
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  href="registration.html"
+                <a id="a11" class="nav-link mx-5" href="registration.html"
                   >Register</a
                 >
               </li>
 
               <li class="nav-item">
-                <a
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  href="gallery.html"
+                <a id="a11" class="nav-link mx-5" href="gallery.html"
                   >Gallery</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  style="
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: large;
-                  "
-                  class="nav-link mx-5"
-                  href="contactus.html"
-                >
+                <a id="a11" class="nav-link mx-5" href="contactus.html">
                   Contact Us</a
                 >
               </li>
@@ -233,7 +216,8 @@
       </nav>
     </header>
     <section>
-      <h1 class="cinzel-style"
+      <h1
+        class="cinzel-style"
         style="
           background-color: rgba(2, 23, 209, 0.199);
           display: flex;
@@ -340,12 +324,9 @@
             style="background-color: rgba(48, 15, 236, 0.068)"
             class="col-sm-4"
           >
-            <h2 class="cinzel-style"
-              style="
-                display: flex;
-                justify-content: center;
-                
-              "
+            <h2
+              class="cinzel-style"
+              style="display: flex; justify-content: center"
             >
               Explore More
             </h2>
