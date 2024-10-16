@@ -39,6 +39,9 @@
       crossorigin="anonymous"
     ></script>
     <style>
+        .row{
+            margin-bottom: 5%;
+        }
       #a11:hover {
         color: rgba(122, 85, 223, 0.733);
         text-decoration: underline;
@@ -271,15 +274,21 @@
                 >
               </li>
 
-              <li class="nav-item">
+              <li class="nav-item dropdown">
                 <a
                   id="a11"
-                  class="nav-link mx-5"
-                  href="gallery.html"
-                  data-bs-toggle="tooltip"
-                  data-bs-title="View Gallery"
-                  >Gallery</a
+                  class="nav-link mx-5 dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gallery.html">Images with effect</a></li>
+                  <li><a class="dropdown-item" href="cap.html">Light box images</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a
