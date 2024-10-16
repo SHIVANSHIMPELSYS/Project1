@@ -106,6 +106,9 @@ body {
   animation: move 10s infinite;
   margin-bottom: 2%;
 }
+.image:hover {
+  animation-play-state: paused;
+}
 .section6 {
   background-color: black;
 }
@@ -534,4 +537,14 @@ header {
 }
 .btn{
   width: 100%;
+}
+.text-reset{
+ 
+  text-decoration: none;
+  color: red;
+
+}
+.text-reset:hover{
+  color: blue;
+  text-decoration: underline;
 }

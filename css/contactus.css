@@ -80,6 +80,14 @@ textarea:focus {
 .dropdown-menu.show {
   display: block;
 }
+.text-reset{
+  color: rgb(125, 176, 224);
+  text-decoration: none;
+}
+.text-reset:hover{
+  color: black;
+  text-decoration: underline;
+}
 
 #a11 {
   font-family: "Cinzel", serif; 

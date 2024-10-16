@@ -30,6 +30,14 @@ body {
     font-size: large;
     font-weight: 700;
   }
+  .text-reset{
+    color: rgb(125, 176, 224);
+    text-decoration: none;
+  }
+  .text-reset:hover{
+    color: black;
+    text-decoration: underline;
+  }
   #a11:hover{
 
     color: rgba(122, 85, 223, 0.733);

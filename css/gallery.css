@@ -46,6 +46,14 @@ footer {
 .container {
   margin-top: 20px;
 }
+.text-reset{
+  color: rgb(125, 176, 224);
+  text-decoration: none;
+}
+.text-reset:hover{
+  color: black;
+  text-decoration: underline;
+}
 .card {
   margin-bottom: 20px;
  box-shadow: 2px 2px 5px 5px rgba(133, 121, 184, 0.479);
